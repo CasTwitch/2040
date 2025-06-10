@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Twitch Vote Bars</title>
+  <style>
+    .bar-container {
+      width: 100%;
+      background-color: #eee;
+      margin: 10px 0;
+      height: 30px;
+      border-radius: 5px;
+      overflow: hidden;
+      position: relative;
+    }
+    .bar-fill {
+      height: 100%;
+      background-color: #4caf50;
+      width: 0%;
+      transition: width 0.3s ease;
+    }
+    .bar-label {
+      position: absolute;
+      left: 10px;
+      top: 4px;
+      font-weight: bold;
+      color: black;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/comfy.js@latest/dist/comfy.min.js"></script>
+</head>
+<body>
+  <h1>Twitch Vote Bars</h1>
+  <div class="bar-container">
+    <div class="bar-fill" id="bar1"></div>
+    <div class="bar-label" id="label1">Test1: 0</div>
+  </div>
+  <div class="bar-container">
+    <div class="bar-fill" id="bar2"></div>
+    <div class="bar-label" id="label2">Test2: 0</div>
+  </div>
+  <div class="bar-container">
+    <div class="bar-fill" id="bar3"></div>
+    <div class="bar-label" id="label3">Test3: 0</div>
+  </div>
+  <div class="bar-container">
+    <div class="bar-fill" id="bar4"></div>
+    <div class="bar-label" id="label4">Test4: 0</div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
